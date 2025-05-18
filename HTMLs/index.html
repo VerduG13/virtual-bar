@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bar Virtual - Cócteles</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
   <header>
@@ -15,7 +15,7 @@
     <section class="cocteles-lista">
       <article class="coctel">
         <a href="mojito.html">
-          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86099316-mojito1.webp" alt="Mojito">
+          <img src="../Photos/Mojito.webp" alt="Mojito">
           <h2>Mojito</h2>
         </a>
         <p>Refrescante y herbal, ideal para el calor.</p>
@@ -23,7 +23,7 @@
 
       <article class="coctel">
         <a href="margarita.html">
-          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86094357-margarita1.webp" alt="Margarita">
+          <img src="../Photos/Margarita.webp" alt="Margarita">
           <h2>Margarita</h2>
         </a>
         <p>Un clásico mexicano con toque ácido y salado.</p>
@@ -31,7 +31,7 @@
 
       <article class="coctel">
         <a href="piña-colada.html">
-          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86104877-pina-colada1.webp" alt="Piña Colada">
+          <img src="../Photos/Piña-Colada.webp" alt="Piña Colada">
           <h2>Piña Colada</h2>
         </a>
         <p>Dulce y tropical, perfecta para relajarse.</p>
@@ -39,7 +39,7 @@
 
       <article class="coctel">
         <a href="daiquiri.html">
-          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86066035-daiquiri1.webp" alt="Daiquiri de fresa">
+          <img src="../Photos/Daiquiri-Fresa.webp" alt="Daiquiri de fresa">
           <h2>Daiquiri de fresa</h2>
         </a>
         <p>Frutal y vibrante, con un toque ácido y dulce.</p>
@@ -47,7 +47,7 @@
 
       <article class="coctel">
         <a href="caipirinha.html">
-          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86062700-caipirinha1.webp" alt="Caipirinha">
+          <img src="../Photos/Caipirinha.webp" alt="Caipirinha">
           <h2>Caipirinha</h2>
         </a>
         <p>El cóctel brasileño por excelencia, con sabor fuerte y cítrico.</p>
@@ -55,14 +55,14 @@
 
       <article class="coctel">
         <a href="tequila-sunrise.html">
-          <img src="https://es.realingredients.com/wp-content2/uploads/sites/24/2021/10/tequilasunrise.png" alt="Tequila Sunrise">
+          <img src="../Photos/Tequila-Sunrise.png" alt="Tequila Sunrise">
           <h2>Tequila Sunrise</h2>
         </a>
         <p>Colorido y visualmente atractivo, suave pero con carácter.</p>
       </article>
     </section>
 
-    <!-- Tabla comparativa -->
+    <!-- Tabla -->
     <section class="tabla-cocteles">
       <h2>Comparativa de Cócteles</h2>
       <table>
@@ -115,27 +115,20 @@
       </table>
     </section>
 
+    <!-- Formulario experiencia -->
     <section class="formulario-experiencia">
       <h2>Cuéntanos tu experiencia</h2>
       <p>Haz clic en el botón para abrir el formulario. ¡Escucha el brindis!</p>
-      <button onclick="abrirFormulario()">Responder</button>
+      <button id="btnResponder">Responder</button>
     </section>
 
-    <audio id="brindis-sound" src="https://freesound.org/s/424776/" preload="auto"></audio>
-
-    <script>
-      function abrirFormulario() {
-        var audio = document.getElementById('brindis-sound');
-        audio.play();
-        window.open('https://forms.office.com/r/gBwab6EJ3V', '_blank');
-      }
-    </script>
-
+    <audio id="brindis-sound" src="../Sounds/Sonido-de-brindis.mp3" preload="auto"></audio>
   </main>
 
   <footer>
     <p>Desarrollo Web - Germán Verdugo</p>
   </footer>
 
+  <script src="../JavaScript/archivo.js"></script>
 </body>
 </html>
