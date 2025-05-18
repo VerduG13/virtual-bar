@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar Virtual - Cócteles</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Bar Virtual</h1>
+    <p>Elige tu cóctel favorito y aprende a prepararlo</p>
+  </header>
+
+  <main>
+    <section class="cocteles-lista">
+      <article class="coctel">
+        <a href="mojito.html">
+          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86099316-mojito1.webp" alt="Mojito">
+          <h2>Mojito</h2>
+        </a>
+        <p>Refrescante y herbal, ideal para el calor.</p>
+      </article>
+
+      <article class="coctel">
+        <a href="margarita.html">
+          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86094357-margarita1.webp" alt="Margarita">
+          <h2>Margarita</h2>
+        </a>
+        <p>Un clásico mexicano con toque ácido y salado.</p>
+      </article>
+
+      <article class="coctel">
+        <a href="piña-colada.html">
+          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86104877-pina-colada1.webp" alt="Piña Colada">
+          <h2>Piña Colada</h2>
+        </a>
+        <p>Dulce y tropical, perfecta para relajarse.</p>
+      </article>
+
+      <article class="coctel">
+        <a href="daiquiri.html">
+          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86066035-daiquiri1.webp" alt="Daiquiri de fresa">
+          <h2>Daiquiri de fresa</h2>
+        </a>
+        <p>Frutal y vibrante, con un toque ácido y dulce.</p>
+      </article>
+
+      <article class="coctel">
+        <a href="caipirinha.html">
+          <img src="https://api.lalicorera.com/storage/cocteles/recetas/86062700-caipirinha1.webp" alt="Caipirinha">
+          <h2>Caipirinha</h2>
+        </a>
+        <p>El cóctel brasileño por excelencia, con sabor fuerte y cítrico.</p>
+      </article>
+
+      <article class="coctel">
+        <a href="tequila-sunrise.html">
+          <img src="https://es.realingredients.com/wp-content2/uploads/sites/24/2021/10/tequilasunrise.png" alt="Tequila Sunrise">
+          <h2>Tequila Sunrise</h2>
+        </a>
+        <p>Colorido y visualmente atractivo, suave pero con carácter.</p>
+      </article>
+    </section>
+
+    <!-- Tabla comparativa -->
+    <section class="tabla-cocteles">
+      <h2>Comparativa de Cócteles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Cóctel</th>
+            <th>Fuerza alcohólica</th>
+            <th>Restricciones</th>
+            <th>Tiempo de preparación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mojito</td>
+            <td>Media</td>
+            <td>Apto</td>
+            <td>5 minutos</td>
+          </tr>
+          <tr>
+            <td>Margarita</td>
+            <td>Alta</td>
+            <td>Apto</td>
+            <td>5 minutos</td>
+          </tr>
+          <tr>
+            <td>Piña Colada</td>
+            <td>Media</td>
+            <td>No apto para intolerantes a la piña</td>
+            <td>7 minutos</td>
+          </tr>
+          <tr>
+            <td>Daiquiri de fresa</td>
+            <td>Media</td>
+            <td>Precaución: contiene fresa</td>
+            <td>6 minutos</td>
+          </tr>
+          <tr>
+            <td>Caipirinha</td>
+            <td>Alta</td>
+            <td>Apto</td>
+            <td>4 minutos</td>
+          </tr>
+          <tr>
+            <td>Tequila Sunrise</td>
+            <td>Alta</td>
+            <td>Apto</td>
+            <td>5 minutos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="formulario-experiencia">
+      <h2>Cuéntanos tu experiencia</h2>
+      <p>Haz clic en el botón para abrir el formulario. ¡Escucha el brindis!</p>
+      <button onclick="abrirFormulario()">Responder</button>
+    </section>
+
+    <audio id="brindis-sound" src="https://freesound.org/s/424776/" preload="auto"></audio>
+
+    <script>
+      function abrirFormulario() {
+        var audio = document.getElementById('brindis-sound');
+        audio.play();
+        window.open('https://forms.office.com/r/gBwab6EJ3V', '_blank');
+      }
+    </script>
+
+  </main>
+
+  <footer>
+    <p>Desarrollo Web - Germán Verdugo</p>
+  </footer>
+
+</body>
+</html>
